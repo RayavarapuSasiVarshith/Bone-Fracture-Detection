@@ -7,6 +7,22 @@
 [![YOLO](https://img.shields.io/badge/YOLO-v11-green.svg)](https://ultralytics.com)
 [![Accuracy](https://img.shields.io/badge/Accuracy-93.2%25-brightgreen.svg)](https://github.com)
 
+## Chalenges
+
+Recently, the most challenging problem I solved was developing FractureScan, a system for detecting bone fractures from X-ray images.
+
+The main difficulty was reducing false negatives and false positives, especially because subtle fractures were easily missed under noisy or low-contrast X-rays.
+
+To address this, I built a hybrid pipeline that combined YOLO for localized detection and a custom CNN (FracNet2D) for classification, improving both precision and sensitivity.
+
+I applied extensive preprocessing and augmentation techniques to handle variations in image quality, bone orientation, and lighting conditions.
+
+Careful threshold tuning, validation, and error analysis helped me significantly boost model stability and reliability.
+
+After iterative experimentation, the system reached around 93.2% accuracy with strong sensitivity and specificity.
+
+This challenge strengthened my skills in model optimization, data handling, and designing robust real-world ML systems.
+
 ## 🎯 **Achievement Summary**
 
 This hybrid system **exceeds the 90% accuracy target** by combining YOLOv11 classification with custom FracNet2D architecture for superior bone fracture detection in X-ray images.
@@ -291,3 +307,4 @@ This system is for research and development purposes. For clinical use, ensure p
 ---
 
 **Developed with ❤️ for advancing medical AI diagnostics**
+
